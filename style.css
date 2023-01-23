@@ -1,0 +1,228 @@
+/*reset*/
+:root {
+    --gris: #D9D9D9;
+    --rosa: #FCCBDA;
+    --azul: #43406A;
+    --blanco: #FFFFFF;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size:50%
+}
+header{
+    display: flex;
+    background: var(--gris);
+}
+.titulo-header{
+    font-size: 4em;
+    margin: 32px;
+    color: var(--azul);
+    font-family: 'Nunito Sans', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+h1{
+    font-style: normal;
+    font-size: 12em;
+    text-align: center;
+    font-weight: normal;
+    color: var(--azul);
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+    font-weight: normal;
+    color: var(--azul);
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.container{
+}
+
+.practicas-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: var(--blanco);
+}
+
+.practica{
+    height: auto;
+    width: 33%;
+    padding: 4em 8em 4em 8em;
+    
+}
+
+.img-container{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
+}
+
+.img-container img{
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+}
+
+.img-container img:hover{
+    opacity: 70%;
+}
+
+.info-container{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin-top: -35px;
+    background-color: var(--gris);
+    line-height: -4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
+}
+
+.info-titulo{
+    padding: 8px 8px 0px 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3.5em;
+    font-style: bold;
+}
+
+.info-cuerpo{
+    padding: 0px 8px 8px 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
+}
+
+.practica-empty{
+    height: auto;
+    width: 33%;
+    background-color: var(--blanco) !important;
+    padding: 4em 8em 4em 8em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 8em;
+    width: 100%;
+    font-size: 20px; 
+    background:var(--gris); 
+}
+
+footer a{
+    padding: 4px;
+    text-decoration: none;  
+    color:var(--azul);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+}
+
+footer a:hover{
+    background-color: var(--azul);
+    color: var(--gris);
+}
+
+@media (max-width: 379px){
+    h1{
+        font-size: 3.2em;;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    header{
+        font-size: 1.6em;
+    }
+    .practica-empty {
+        display: none;
+    }
+    .titulo-header{
+        font-size: 16px;
+        margin: 16px;
+    }
+    .info-titulo{
+        font-size: 2.5em;
+
+    }
+    .info-cuerpo{
+        font-size: 1.5em;
+
+    }
+    .footer{
+        height: 4em;
+    }
+    .footer a {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 960px) and (min-width: 380px) {
+    h1{
+        font-size: 8em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    header{
+        font-size: 4em;
+    }
+    .practica-empty {
+        display: none;
+    }
+    .titulo-header{
+        font-size: 24px;
+        margin: 22px;
+    }
+    .practica {
+        width: 400px;
+    }
+    .info-titulo{
+        font-size: 3em;
+
+    }
+    .info-cuerpo{
+        font-size: 2em;
+
+    }
+    .footer{
+        height: 6em;
+    }
+    .footer a {
+        font-size: 0.75em;
+    }
+}
+
+
+@media only screen and (min-width: 1181px) and (max-width: 1280px) {
+    .info-titulo{
+        font-size: 3em;
+
+    }
+    .info-cuerpo{
+        font-size: 2em;
+
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1180px) {
+    .info-titulo{
+        font-size: 2.5em;
+
+    }
+    .info-cuerpo{
+        font-size: 1.5em;
+
+    }
+}
